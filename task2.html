@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task 2 - University Admission Form</title>
+    <style>
+        /* Practicing basic CSS text properties */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        h1 {
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-decoration: underline;
+        }
+        h2 {
+            color: #333;
+            letter-spacing: 1px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+        th, td {
+            border: 1px solid #999;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        fieldset {
+            margin-bottom: 15px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <p><a href="task1.html">← Go back to Task 1</a></p>
+
+    <h1>University Admission Form</h1>
+
+    <form action="#" method="POST" enctype="multipart/form-data">
+        
+        <fieldset>
+            <legend>Personal Information</legend>
+            Name: <input type="text" name="name" required><br><br>
+            Password: <input type="password" name="password" required><br><br>
+            Date of Birth: <input type="date" name="dob" required><br><br>
+            Gender: 
+            <input type="radio" name="gender" value="Male"> Male 
+            <input type="radio" name="gender" value="Female"> Female
+        </fieldset>
+
+        <fieldset>
+            <legend>Contact Information</legend>
+            Email: <input type="email" name="email" required><br><br>
+            Phone: <input type="tel" name="phone" required><br><br>
+            City: <input type="text" name="city" required><br><br>
+            Address: <textarea name="address" rows="2" required></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>Academic Information</legend>
+            Previous Marks: <input type="number" name="marks" required><br><br>
+            Preferred Program: 
+            <select name="program">
+                <option value="cs">Computer Science</option>
+                <option value="se">Software Engineering</option>
+                <option value="ai">Artificial Intelligence</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Interests/Skills</legend>
+            <input type="checkbox" name="skill" value="Programming"> Programming 
+            <input type="checkbox" name="skill" value="Math"> Math 
+            <input type="checkbox" name="skill" value="Physics"> Physics
+        </fieldset>
+
+        <fieldset>
+            <legend>Profile Picture</legend>
+            Upload Image: <input type="file" name="pic" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Additional Information</legend>
+            Why do you want to join the university?<br>
+            <textarea name="reason" rows="3" cols="40" required></textarea>
+        </fieldset>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+
+    </form>
+
+    <h2>Student Information Table</h2>
+    <table>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>Department</th>
+        </tr>
+        <tr>
+            <td>Ali</td>
+            <td>Khan</td>
+            <td>ali@example.com</td>
+            <td>Computer Science</td>
+        </tr>
+        <tr>
+            <td>Ayesha</td>
+            <td>Bibi</td>
+            <td>ayesha@example.com</td>
+            <td>Software Engineering</td>
+        </tr>
+        <tr>
+            <td>Bilal</td>
+            <td>Ahmed</td>
+            <td>bilal@example.com</td>
+            <td>Artificial Intelligence</td>
+        </tr>
+        <tr>
+            <td>Zainab</td>
+            <td>Noor</td>
+            <td>zainab@example.com</td>
+            <td>Electrical Engineering</td>
+        </tr>
+        <tr>
+            <td>Usman</td>
+            <td>Ghani</td>
+            <td>usman@example.com</td>
+            <td>Computer Science</td>
+        </tr>
+    </table>
+
+    <h2>Media Elements</h2>
+    <p>Audio Player:</p>
+    <audio controls>
+        <source src="audio.mp3" type="audio/mpeg">
+    </audio>
+
+    <p>Video Player:</p>
+    <video width="320" height="240" controls>
+        <source src="video.mp4" type="video/mp4">
+    </video>
+
+    <p>Iframe (Map / Webpage):</p>
+    <iframe src="https://example.com" width="300" height="150"></iframe>
+
+    <h2>HTML Source Code</h2>
+    <pre><code>
+&lt;!-- Paste your complete HTML code here as required --&gt;
+    </code></pre>
+
+</body>
+</html>
